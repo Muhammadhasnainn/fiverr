@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.canvas {
+  width: 85% !important;
+  margin: auto !important;
+}
+
+.Navbar {
+  height: 70px;
+  color: white;
+}
+
+.Navbar .logo {
+  height: 50px;
+}
+
+.resp_menu {
+  position: fixed;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  height: 100%;
+  transition: 0.3s all ease;
+  width: 60%;
+}
+
+.Hero {
+  min-height: 140vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5) url("./images/telecommunication-tower.jpg");
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Hero .heroMain {
+  min-height: calc(140vh - 70px);
+}
+
+.Hero .herofirst {
+  height: calc(100vh - 70px);
+}
+
+.Hero .grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.heroimg {
+  height: 70%;
+}
+
+/* Address */
+.cards-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  grid-column-gap: 50px;
+  grid-row-gap: 60px;
+  margin-top: 80px;
+}
+
+.Card {
+  position: relative;
+  height: 250px;
+  background: #162058;
+  padding: 0px 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.Card .icon {
+  position: absolute;
+  top: -45px;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: blue;
+  color: white !important;
+}
+
+.Card .fw-bold {
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.Address .Card .fw-bold::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  margin-top: 2px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 3px;
+  background: #ffd683;
+}
+
+/* Services */
+.Services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #162058;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.Services .Card {
+  background: rgb(248, 248, 248);
+  color: black !important;
+  transition: 0.3s all ease;
+}
+
+.Services .Card:hover {
+  background: white;
+}
+
+
+/* rRws */
+.details{
+  position: relative;
+}
+
+.details::before{
+  content: "";
+  position: absolute;
+  top: 0%;
+  margin-top: -20px;
+  left: 0px;
+  width: 80px;
+  height: 4px;
+  background:blue;
+}
+
+.RowSection img{
+  box-shadow: 10px 10px 7px 3px rgb(196, 196, 196);
+  object-fit: cover;
+}
+
+/* worksection */
+.worksection{
+  min-height: 100vh;
+  background: #162058;
+  padding: 20px;
+}
+
+.small-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-top: 80px;
+}
+
+
+/* Team */
+.Team .avatar{
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0px !important;
+}
+
+.primary_btn {
+  background: blue !important;
+  color: white;
+  transition: 0.3s all ease;
+}
+
+.highlight {
+  color: #ffd683;
+}
+
+.primary_btn:hover {
+  opacity: 0.7;
+}
+
+.main_heading {
+  font-size: 3rem;
+}
+
+.heading_style {
+  position: relative;
+}
+
+.heading_style::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  left: calc(50% - 5%);
+  width: 10%;
+  height: 3px;
+  background: blue;
+}
+
+.mt-10 {
+  margin-top: 70px !important;
+}
+
+.blue{
+  color: blue;
+}
+
+
+@media(max-width: 850px){
+  .RowSection .canvas{
+    flex-direction: column !important;
+  }
+  .RowSection .canvas .w-50{
+    width: 100% !important;
+  }
+  .RowSection .canvas img{
+    height: 50% !important;
+    margin-bottom: 40px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .main_heading {
+    font-size: 2.5rem;
+  }
+  .heroimg {
+    display: none !important;
+  }
+  .Hero .content {
+    width: 100% !important;
+  }
+  .Team .avatar{
+    height: 100px;
+    width: 100px;
+  }
+  
+}
+
+@media (max-width: 400px) {
+  .canvas {
+    width: 90% !important;
+  }
+  .logo {
+    width: 180px;
+  }
+  .main_heading {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 365px) {
+  .canvas {
+    width: 93% !important;
+  }
+  .main_heading {
+    font-size: 2rem;
+  }
+}
