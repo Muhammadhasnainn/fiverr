@@ -1,61 +1,73 @@
 import React from "react";
-import { FaCheck, FaPhone, FaPiggyBank } from "react-icons/fa";
-import { HiCursorClick } from "react-icons/hi";
-import {TbHandClick} from "react-icons/tb";
+import { MdCall, MdSavings} from "react-icons/md";
+import { BsFillPencilFill, BsQuestionLg } from "react-icons/bs";
+import { TbHandClick } from "react-icons/tb";
+import {AiFillSetting} from "react-icons/ai";
 
 const HowWorks = () => {
   return (
     <div className="worksection mt-10">
       <h1 className="fw-bold text-center text-white mt-3">
-        Come funziona Sunprime
+        Vuoi anche tu Contribuire alla digitalizzazione del Paese?
       </h1>
       <div className="canvas">
+        <h4 className="fw-bold text-center text-white mt-3">
+          Ci occuperemo totalmento delle pratiche burocratiche ed amministrative
+          senza nessun aggravio di costo o tempo per il proprietario
+        </h4>
         <div className="small-grid">
           <div className="text-center text-white">
             <p className="highlight">STEP 1</p>
-            <HiCursorClick className="highlight mt-2" size={50} />
-            <p className="fs-5 fw-bold mt-2">SELEZIONA IL TUO TETTO</p>
+            <BsQuestionLg className="highlight mt-2" size={50} />
+            <p className="fs-5 fw-bold mt-2">RISPONDI ALLI DOMANDE</p>
             <p className="mt-2">
-              Segui la procedura online dove potrai individuare sulla mappa il
-              tuo immobile. Inserendo i dati richiesti saremo in grado di
-              fornirti un’offerta personalizzata.
+              Segui la procedura online dove dovrai rispondere a delle veloci
+              domande e potrai individuare sulla mappa il tuo terreno.
             </p>
           </div>
           <div className="text-center text-white">
             <p className="highlight">STEP 2</p>
-            <FaPiggyBank className="highlight mt-2" size={50} />
-            <p className="fs-5 fw-bold mt-2">SCOPRI IL TUO RISPARMIO</p>
+            <BsFillPencilFill className="highlight mt-2" size={45} />
+            <p className="fs-5 fw-bold mt-2">INSERISCI I CONTATTI</p>
             <p className="mt-2">
-              In pochi minuti siamo in grado di darti un’indicazione sul
-              risparmio in bolletta ed i ricavi dalla vendita dell’energia in
-              rete di cui potrai beneficiare.
+              Dopo aver svolto la procedura inserisci i tuoi contatti per venire
+              richiamato e procedere con un nostro specialista.
             </p>
           </div>
+
           <div className="text-center text-white">
             <p className="highlight">STEP 3</p>
-            <FaPhone className="highlight mt-2" size={50} />
-            <div className="mt-2">
-              <p className="fs-5 fw-bold mt-2">ASSISTENZA PERSONALIZZATA</p>
-              <p className="mt-2">
-                Verrai poi contattato da un nostro consulente che raccoglierà
-                ulteriori dati ed organizzerà un sopralluogo. Ci occuperemo poi
-                dell'installazione, e ci prenderemo cura dell'impianto
-              </p>
-            </div>
+            <MdCall className="highlight mt-2" size={50} />
+            <p className="fs-5 fw-bold mt-2">ASSISTENZA</p>
+            <p className="mt-2">
+              Verrai poi contattato da un nostro consulente che raccoglierà
+              ulteriori dati ed organizzerà un sopralluogo.
+            </p>
           </div>
+
           <div className="text-center text-white">
             <p className="highlight">STEP 4</p>
-            <FaCheck className="highlight mt-2" size={50} />
-            <p className="fs-5 fw-bold mt-2">RISPARMIO IMMEDIATO</p>
+            <AiFillSetting className="highlight mt-2" size={50} />
+            <p className="fs-5 fw-bold mt-2">ATTO NOTARILE</p>
             <p className="mt-2">
-              Inizierai a risparmiare fin da subito sulla bolletta dell'energia,
-              nel pieno rispetto dell'ambiente, facendo diventare la tua azienda
-              più sostenibile!
+              Stipula un atto di locazione con diritto di superficie presso il
+              notaio.
+            </p>
+          </div>
+
+          <div className="text-center text-white">
+            <p className="highlight">STEP 5</p>
+            <MdSavings className="highlight mt-2" size={50} />
+            <p className="fs-5 fw-bold mt-2">PAGAMENTI</p>
+            <p className="mt-2">
+              Percepirai i tuoi canoni di locazione come da
+              contratto sottoscritto
             </p>
           </div>
         </div>
         <button className="btn primary_btn d-block text-white py-2 px-4 mx-auto mt-5">
-            Inizia la procedura online <TbHandClick size={25}/></button>
+          Inizia la procedura online <TbHandClick size={25} />
+        </button>
       </div>
     </div>
   );

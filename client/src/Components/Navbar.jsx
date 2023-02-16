@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import logo from "../images/logo.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -9,10 +10,12 @@ const Navbar = () => {
     <>
       <nav className="d-flex align-items-center Navbar">
         <div className="d-flex justify-content-between align-items-center canvas">
+        <Link to="/">
           <img
-            src="https://sunprime.it/wp-content/uploads/2022/09/Sunprime_White.png"
+            src={logo}
             className="logo"
           ></img>
+          </Link>
           <div className="d-flex align-items-center menu">
             {window.matchMedia("(min-width: 800px)").matches && (
               <>

@@ -1,64 +1,40 @@
 import React from "react";
+import img1 from "../images/mobile-network-cell-tower.jpg"
+import img2 from "../images/antenne 5g installazione.jpg";
 
 const OurTeam = () => {
   return (
-    <div className="Team mt-10">
+    <div className="Team mt-10 mb-5 py-5">
       <div className="canvas">
-        <h1 className="fw-bold text-center">Our Team</h1>
+        <h1 className="fw-bold text-center">
+          Tipologia standard di infrastrutture
+        </h1>
         <p className="fs-5 mt-3 text-muted text-center">
-          Sunprime è composta da esperti e professionisti impegnati da anni nel
-          settore delle energie rinnovabili
+          Le infrastrutture idonee all’installazione di stazioni radio base o
+          BTS (acronimo dalla lingua inglese per “Base Transceiver Station”)
+          ospitano le antenne ricetrasmittenti che servono i terminali mobili
+          degli utenti coprendo una determinata area geografica, coperta da una
+          cella radio. Le tipologie sono:
         </p>
 
-        <div className="small-grid">
+        <div className="grid_2 mt-5">
           <div>
-            <img
-              src="https://sunprime.it/wp-content/uploads/elementor/thumbs/Angeli-6-scaled-pvdve6oprfcfdvyu5oiqpstza53i2ux5tel2nb2h1s.jpg"
-              className="avatar"
-            />
-            <p className="fs-5 text-center mt-2">GABRIELE ANGELI</p>
-            <p className="mt-2 text-muted">
-              È il motore principale del Gruppo Angeli, dal 1960 azienda attiva
-              nel settore delle costruzioni generali, impiantistica e fonti
-              rinnovabili in Italia e nel mondo.
+            <img src={img1} alt="img" className="h-75 w-100"/>
+            <p className="mt-3 text-center">
+              Sito costituito da una palina, ancorata o staffata a strutture
+              portanti, sulla copertura di un edificio. La SRB occupa una
+              superficie variabile a seconda della necessità, sarà concordata
+              con il locatore.
             </p>
           </div>
           <div>
-            <img
-              src="https://sunprime.it/wp-content/uploads/elementor/thumbs/Mazzitelli-4-scaled-pvdveh0xulqkxljthazmz881tdojfj27itrexcn55c.jpg"
-              className="avatar"
-            />
-            <p className="fs-5 text-center mt-2">ANTONIO MAZZITELLI</p>
-            <p className="mt-2 text-muted">
-              Imprenditore e consulente manageriale, da 10 anni attivo nel mondo
-              dell’energia e della consulenza direzionale in Italia ed
-              all’estero. Esperto di generazione elettrica distribuita,
-              investimenti e strategia d’impresa.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://sunprime.it/wp-content/uploads/elementor/thumbs/Angeli-6-scaled-pvdve6oprfcfdvyu5oiqpstza53i2ux5tel2nb2h1s.jpg"
-              className="avatar"
-            />
-            <p className="fs-5 text-center mt-2">GABRIELE ANGELI</p>
-            <p className="mt-2 text-muted">
-              È il motore principale del Gruppo Angeli, dal 1960 azienda attiva
-              nel settore delle costruzioni generali, impiantistica e fonti
-              rinnovabili in Italia e nel mondo.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://sunprime.it/wp-content/uploads/elementor/thumbs/Mazzitelli-4-scaled-pvdveh0xulqkxljthazmz881tdojfj27itrexcn55c.jpg"
-              className="avatar"
-            />
-            <p className="fs-5 text-center mt-2">ANTONIO MAZZITELLI</p>
-            <p className="mt-2 text-muted">
-              Imprenditore e consulente manageriale, da 10 anni attivo nel mondo
-              dell’energia e della consulenza direzionale in Italia ed
-              all’estero. Esperto di generazione elettrica distribuita,
-              investimenti e strategia d’impresa.
+            <img src={img2} alt="img" className="h-75 w-100"/>
+            <p className="mt-3 text-center">
+              Sito a terra. La Stazione Radio Base (SRB) è costituita da una
+              struttura porta-antenne con fondazioni nel terreno. La SRB occupa
+              mediamente una superficie di 36 mq rispettando le distanze minime
+              dai confini di 5 mq. L’altezza della struttura può variare da un
+              minimo di 24 mt ad un massimo di 36 mt.
             </p>
           </div>
         </div>
